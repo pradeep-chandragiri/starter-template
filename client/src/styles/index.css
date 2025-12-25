@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5 !important;
+    user-select: none !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+:root{
+
+    /* UI/UX Color Pallete */
+    --primary-bg: oklch(100% 0.00011 271.152);
+    --secondary-bg: oklch(98.5% 0.001 106.423);
+    --optional-bg: oklch(97% 0 0);
+
+    --primary-txt: oklch(14.5% 0 0);
+    --secondary-txt: oklch(26.9% 0 0);
+    --optional-txt: oklch(37.1% 0 0);
+
+    --primary-accent: oklch(62.3% 0.214 259.815);
+    --secondary-accent: oklch(63.7% 0.237 25.331);
+    --optional-accent: oklch(76.8% 0.233 130.85);
+
+    --primary-border: oklch(92.2% 0 0);
+    --secondary-border: oklch(87% 0 0);
+
+    /* UI/UX Font Sizes */
+    --fs-lg: 32px;
+    --fs-md: 21px;
+    --fs-base: 17px;
+    --fs-sm: 14px;
+}
+
+body{
+    font-size: var(--fs-base);
+}
+
+h1{
+    font-weight: 700;
+    font-size: var(--fs-lg);
+}
+
+h2, h3{
+    font-weight: 600;
+    font-size: var(--fs-md);
+}
+
+.meta-data{
+    font-size: var(--fs-sm);
+    color: var(--secondary-txt);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-accent);
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-weight: 500;
+    font-size: var(--fs-base);
+    transform: scale(0.95);
+    transition: .3s ease-in !important;
+}
+button:hover{
+    opacity: 0.7;
+    transform: scale(1);
+}
